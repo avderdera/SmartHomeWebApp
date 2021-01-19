@@ -1,0 +1,297 @@
+@charset "ISO-8859-1";
+
+#demo {
+transform: translate(200px, 0px);
+width:50px;
+color:white;
+}
+
+a:hover + div {
+  display: block;
+}
+
+.spawn {
+	width:auto;
+	height:auto;
+	color:white;
+	display:none;
+	z-index:1;
+}
+
+a:hover {
+	
+	cursor:pointer;
+}
+
+.livingbulb {
+	padding-top:160px;
+	padding-left:200px;
+}
+
+.bedbulb {
+	padding-top:100px;
+	padding-left:350px;
+}
+
+.kidsbulb {
+	padding-top:40px;
+	padding-left:35px;
+}
+
+#shadow {
+		/*-webkit-box-shadow: 2px 2px 2px 2px #dbdbdb; */
+		-webkit-box-shadow: 0px 10px 13px -7px #000000, 2px 5px 15px 5px rgba(0,0,0,0); 
+		box-shadow: 0px 10px 13px -7px #bdbdbd, 2px 5px 15px 5px rgba(0,0,0,0);
+	}
+	
+	#new{
+		text-shadow:0 1px 0 #CCCCCC,
+					0 2px 0 #c9c9c9,
+					0 3px 0 #bbb, 
+					0 4px 0 #b9b9b9,
+					0 5px 0 #aaa,
+					0 6px 1px rgba(0,0,0,.1),
+					0 0 5px rgba(0,0,0,.1),
+					0 1px 3px rgba(0,0,0,.3),
+					0 3px 5px rgba(0,0,0,.2),
+					0 5px 10px rgba(0,0,0,.25),
+					0 10px 10px rgba(0,0,0,.2),
+					0 20px 20px rgba(0,0,0,.15);
+		color: #FFFFFF;
+	
+	}
+	
+	.temp {
+		font-size:2em;
+		text-align:center;
+	}
+	
+	.add {
+		position:absolute;
+		transform: translate(1800px, -50px);
+		font-size:1em;
+		color:white;
+		padding:0;
+		float:right;
+	}
+	
+	
+	#tit {
+		color: #44ca5F;
+		text-shadow: 0 0 5px #FFF,
+			0 0 10px #FFF, 
+			0 0 15px #FFF,
+			0 0 20px #49ff18,
+			0 0 30px #49FF18,
+			0 0 40px #49FF18,
+			0 0 55px #49FFff,
+			0 0 75px #49ffff;
+		color: #ffffff;
+		background: #2e5978;
+	}
+	
+	
+	
+	.title {
+		
+		width:100%;
+		text-align:center;
+		font-size:3em;
+		
+		padding-bottom:20px;
+		color:#ffffff;
+	}
+	
+	body {
+		background-color:#2e5978;
+		
+	}	
+	
+	
+	
+	ul {
+	  list-style-type: none;
+	  margin-top: 10px;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	  height:60px;
+	  width: 100%;
+	}
+	
+	li {
+	  float: left;
+	  margin-top:8px;
+	}
+	
+	nav a  {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	li a:hover {
+	  background-color: #111;
+	}
+	
+	.logout {
+		float:right;
+	}
+	
+	
+	
+	.grid-container {
+	  
+	  width:200px;
+	  height:auto;
+	  display: in-line-grid;
+	  grid-row-gap: 4px;
+	  grid-column-gap: 2px;
+	  grid-template-columns: auto auto ;
+	  background-color: rgba(28, 74, 240, 1);
+	  padding: 10px;
+	  margin: auto;
+	  box-shadow: 5px 5px #bdbdbd; 
+	  
+	}
+	
+	.item3 {
+	
+		grid-column-start: 1;
+		grid-column-end: 3;
+		text-align: center;
+	}
+		
+	
+	.grid-item {
+	
+	  padding: 10px;
+	  margin: 2px;
+	  width:auto;
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+	  
+	}
+	
+	.centered {
+		text-align:center;
+	}
+	
+	.column {
+  		 float: left;
+ 		 padding-bottom:40px;
+ 		 margin-top:40px;
+ 		 margin-left:10px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		  margin-top:40px;
+		  
+	}
+	.button {
+		  border: none;
+		  color: white;
+		  padding: 5px 5px;
+		  text-align: center;
+		  text-decoration: none;
+		  border-radius: 15px;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.4s;
+		  cursor: pointer;
+	}
+
+	.button {
+	  background-color: white; 
+	  color: black; 
+	  border: 2px solid #4CAF50;
+	}
+
+	.button:hover {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	
+	@media screen and (max-width:600px) {
+  		.column {
+   		 width: 100%;
+  		}
+	}
+	
+	#room {
+		text-align:center;
+		font-size:1.2em;
+		text-decoration:bold;
+		color:#ff8000;
+	}
+	
+	/* ---------------------------------------------------------------------------- */
+	/* switcher checkbox below*/
+	/* Toggle Button */
+.cm-toggle {
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	position: relative;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	margin: 10px;
+}
+
+
+/* To create surface of toggle button */
+.cm-toggle:after {
+	content: '';
+	width: 55px;
+	height: 16px;							/*background height and width */
+	display: inline-block;
+	background: rgba(196, 195, 195, 0.55);
+	border-radius: 18px;
+	clear: both;
+}
+
+
+/* Contents before checkbox to create toggle handle */
+.cm-toggle:before {
+	content: '';
+	width: 20px;
+	height: 20px;				/* balls height and width accordingly */
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -3px;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Shift the handle to left on check event */
+.cm-toggle:checked:before {
+	left: 38px; 									/*how far it moves */
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Background color when toggle button will be active */
+.cm-toggle:checked:after {
+	background: #16a085;
+}
+
+/* Transition for smoothness */
+.cm-toggle,
+.cm-toggle:before,
+.cm-toggle:after,
+.cm-toggle:checked:before,
+.cm-toggle:checked:after {
+	transition: ease .3s;
+	-webkit-transition: ease .3s;
+	-moz-transition: ease .3s;
+	-o-transition: ease .3s;
+}
+
+/* ---------------------------------------------------------------------------------------*/
